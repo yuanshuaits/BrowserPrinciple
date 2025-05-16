@@ -99,7 +99,7 @@ function foo() {
 }
 foo.call(bar)
 console.log(bar)
-console.log(myName)
+console.log(bar.myName)
 ```
 
 执行这段代码，然后观察输出结果，你就能发现 foo 函数内部的 this 已经指向 bar 对象，因为通过打印 bar 对象，可以看出 bar 的 myName 属性已经由"极客邦"变为"极客时间"了，同时在全局执行上下文中打印 myName，JavaScript 引擎提示该变量未定义。
